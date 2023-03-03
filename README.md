@@ -62,4 +62,6 @@ systemctl restart nginx
 rc-service nginx restart
 ```
 
-For other init systems please consult the man page
+For adventurous users employing other init systems such as `runit` please consult the man page.
+
+Please note that these steps require root permissions. If you have disabled root login on your machine you may use commands such as `su` to switch users or `sudo` or `doas` to allow for execution of commands with root permissions.
