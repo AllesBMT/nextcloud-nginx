@@ -20,10 +20,10 @@ Copy the configuration file to your `/etc/nginx/sites-available/` directory by i
 TODO
 ```
 
-Now change the `server_name` placeholder to your domain in the following way:
+Now change the `example_server` placeholder to your domain in the following way:
 
 ```console
-sed -i 's/server_name/https:\/\/your.domain\/subdomain/g' nextcloud.conf
+sed -i 's/example_server/https:\/\/your.domain\/subdomain/g' nextcloud.conf
 ```
 
 You may also choose to manually complete this step using a text editor of your choice if you are not familiar with sed.
@@ -31,7 +31,7 @@ You may also choose to manually complete this step using a text editor of your c
 Alternatively one may use `vim` commands:
 
 ```console
-:%s/server_name/https:\/your.domain\/subdomain/g
+:%s/example_server/https:\/your.domain\/subdomain/g
 ```
 
 Now create a symlink to the file in your `sites-enabled` directory
