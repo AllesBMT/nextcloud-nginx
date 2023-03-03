@@ -39,3 +39,27 @@ Now create a symlink to the file in your `sites-enabled` directory
 ```console
 ln -s nextcloud.conf ../sites-enabled/nextcloud.conf
 ``` 
+
+### SSL
+
+Configure SSL using a service of your choice, certbot example:
+
+```console
+TODO 
+```
+
+### Final Step
+
+The final remaining step would be to restart nginx, for `systemd` this can be achieved by issuing 
+
+```console
+systemctl restart nginx
+```
+
+`OpenRC`
+
+```console
+rc-service nginx restart
+```
+
+For other init systems please consult the man page
